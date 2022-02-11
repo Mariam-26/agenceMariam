@@ -1,0 +1,206 @@
+// Style général
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: no-repeat url(../../public/img/bg.jpg) top/cover !important;
+}
+
+
+/* style pr le header */
+
+#header {
+    transition: ease-in-out 0.3s;
+    position: relative;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    * {
+        transition: ease-in-out 0.3s;
+    }
+    h1 {
+        text-transform: uppercase;
+        display: block;
+        position: relative;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 2.1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        margin-right: 300px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    // NAV
+    .nav-menu {
+        // margin-top: -450px;
+        margin-top: 10px;
+        margin-right: 70px;
+        width: 100%;
+        .bouton {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        ul {
+            display: flex;
+            margin-top: 40px;
+            padding: 0;
+            list-style: none;
+            margin: auto;
+            li {
+                margin-left: 15px;
+            }
+        }
+        a {
+            text-transform: uppercase;
+            display: block;
+            position: relative;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    // FIN NAV
+}
+
+
+/* fin header */
+
+// MAIN
+.container {
+    margin: 30px;
+    h2 {
+        font-size: 7rem !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 20px;
+        position: relative;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    h3 {
+        font-size: 3rem !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 20px;
+        position: relative;
+        color: rgba(255, 255, 255, 0.7);
+        &:hover {
+            color: #fff;
+        }
+    }
+    .fa-facebook-f {
+        position: absolute;
+        right: 30px;
+        top: 30%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .fa-twitter {
+        position: absolute;
+        right: 30px;
+        top: 37%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .fa-instagram {
+        position: absolute;
+        right: 30px;
+        top: 44%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .fa-snapchat-ghost {
+        position: absolute;
+        right: 30px;
+        top: 51%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .fa-whatsapp {
+        position: absolute;
+        right: 30px;
+        top: 58%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+// FOOTER
+footer {
+    margin-top: 150px;
+    background: rgba(255, 255, 255, 0.08);
+    height: 15vh;
+    span {
+        padding-top: 20px;
+        margin-right: 40px;
+        font-size: 1rem;
+    }
+    .copy {
+        font-size: 10px;
+    }
+}
+
+
+/* FIN FOOTER */
+
+// MEDIA QUERY
+// MOBOLE
+@media screen and (max-width: 991px) {
+    /* style pr le header */
+    #header {
+        height: 30vh;
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    /* fin header */
+    // MAIN
+    .container {
+        h2 {
+            font-size: 4rem !important;
+        }
+        h3 {
+            font-size: 2rem !important;
+            margin-bottom: 40px;
+        }
+    }
+    /* FIN MAIN */
+    // FOOTER
+    footer {
+        margin-bottom: 30px;
+        span {
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        .copy {
+            font-size: 10px;
+        }
+    }
+    /* FIN FOOTER */
+}
