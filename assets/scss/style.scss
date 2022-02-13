@@ -152,9 +152,13 @@ body {
 
 // FOOTER
 footer {
-    margin-top: 150px;
+    margin-top: 400px;
     background: rgba(255, 255, 255, 0.08);
-    height: 15vh;
+    height: 40vh;
+    .para1 {
+        border: 5px solid rebeccapurple;
+        padding: 40px;
+    }
     span {
         padding-top: 20px;
         margin-right: 40px;
